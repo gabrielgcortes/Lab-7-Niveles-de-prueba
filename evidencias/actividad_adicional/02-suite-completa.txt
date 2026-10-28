@@ -1,0 +1,25 @@
+Fecha: 2026-10-27T18:45:27-06:00
+$ pytest -v
+
+======================================= test session starts ========================================
+platform darwin -- Python 3.13.5, pytest-9.2.0, pluggy-1.7.0 -- /Users/gabrielgarciacortes/Documents/Codex/2026-10-27/actividad-tomando-en-cuenta-la-actividad/work/lab7/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/gabrielgarciacortes/Documents/Codex/2026-10-27/actividad-tomando-en-cuenta-la-actividad/work/lab7
+configfile: pytest.ini
+collecting ... collected 11 items
+
+test.py::test_borrow_book PASSED                                                             [  9%]
+test.py::test_borrow_two_times_book PASSED                                                   [ 18%]
+test.py::test_return_book PASSED                                                             [ 27%]
+test.py::test_borrow_and_try_exception PASSED                                                [ 36%]
+test.py::test_library_init PASSED                                                            [ 45%]
+test.py::test_library_init_ID_not_registered PASSED                                          [ 54%]
+test_adicionales.py::test_prestamos_deshabilitados_no_modifican_estado PASSED                [ 63%]
+test_adicionales.py::test_devolucion_con_usuario_inexistente_no_modifica_estado PASSED       [ 72%]
+test_adicionales.py::test_isbn_inexistente_no_modifica_estado PASSED                         [ 81%]
+test_adicionales.py::test_consultar_historial_vacio_desde_menu PASSED                        [ 90%]
+test_adicionales.py::test_menu_se_recupera_de_opcion_invalida PASSED                         [100%]
+
+======================================== 11 passed in 0.02s ========================================
+
+Codigo de salida: 0

@@ -55,7 +55,7 @@ def lib_init():
 @pytest.mark.unit
 def test_library_init(lib_init):
     lib = lib_init
-    lib.borrow_book("ISBN0001", "0001")
+    lib.borrow_book("0001", "ISBN0001")
 
     assert lib.books[0].borrowed == True
 
@@ -64,5 +64,5 @@ def test_library_init(lib_init):
 def test_library_init_ID_not_registered(lib_init):
     lib = lib_init
 
-    with pytest.raises(ValueError, match="User ID not registered"):
-        lib.borrow_book("ISBN0001", "0002")
+    with pytest.raises(ValueError, match="^User not found$"):
+        lib.borrow_book("0002", "ISBN0001")
